@@ -1,0 +1,45 @@
+.fixed-bar{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    background-color:lightskyblue;
+    padding: 5px;
+    z-index: 10086;
+}
+.fixed-bar span {
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+.fixed-bar span img{
+    width: 100%;
+}
+.fixed-bar .weixin:hover .weixin-box{
+    display: block;
+}
+.fixed-bar .qq:hover .qq-box{
+    display: block;
+}
+.fixed-bar .weixin-box{
+    display: none;
+    position: absolute;
+
+    width: 100px;
+    background-color: pink;
+}
+.fixed-bar .weixin-box{
+    right: 45px;
+    top: 0;
+}
+.fixed-bar .qq-box{
+    display: none;
+    position: absolute;
+
+    width: 100px;
+    background-color: pink;
+}
+.fixed-bar .qq-box{
+    right: 45px;
+    top: 0;
+}
