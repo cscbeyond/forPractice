@@ -1,45 +1,63 @@
-.fixed-bar{
+.fixed-bar {
     position: fixed;
     top: 50%;
     right: 0;
-    background-color:lightskyblue;
+    background-color: lightskyblue;
     padding: 5px;
     z-index: 10086;
 }
+
 .fixed-bar span {
     display: block;
     height: 40px;
     width: 40px;
     position: relative;
 }
-.fixed-bar span img{
+
+.fixed-bar span img {
     width: 100%;
 }
-.fixed-bar .weixin:hover .weixin-box{
+
+.fixed-bar .weixin:hover .weixin-box {
     display: block;
 }
-.fixed-bar .qq:hover .qq-box{
+
+.fixed-bar .qq:hover .qq-box {
     display: block;
 }
-.fixed-bar .weixin-box{
+
+.fixed-bar .weixin-box {
     display: none;
     position: absolute;
-
-    width: 100px;
-    background-color: pink;
-}
-.fixed-bar .weixin-box{
+    color: #43BC60;
+    width: 120px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     right: 45px;
-    top: 0;
+    top: -40px;
 }
-.fixed-bar .qq-box{
+.fixed-bar .weixin-box .wx{
+    margin-bottom: 8px;
+}
+
+.fixed-bar .qq-box {
     display: none;
     position: absolute;
-
-    width: 100px;
-    background-color: pink;
-}
-.fixed-bar .qq-box{
+    width: 120px;
+    background-color: #fff;
     right: 45px;
     top: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.fixed-bar .qq-box p {
+    height: 40px;
+    line-height: 40px;
+    padding: 2px 20px;
+    color: #43BC60;
 }
